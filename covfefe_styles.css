@@ -32,6 +32,7 @@ header .logo img {
     width: 100px;
 }
 
+
 header nav ul {
     list-style-type: none;
     display: flex;
@@ -183,3 +184,53 @@ footer .social-links a:hover {
 footer p {
     margin-top: 20px;
 }
+/* Hero Section Styles */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background: url('assets/covfefe-logo.jpeg') no-repeat center center fixed;
+    background-size: 60%; /* Adjust size as needed */
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for better text visibility */
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+.cta-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f0a500;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #e08900;
+}
+
+/* Ensuring content scrolls over watermark */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+section {
+    padding: 80px 20px;
+}
+
