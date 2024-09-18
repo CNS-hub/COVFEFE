@@ -27,6 +27,7 @@ body {
 /* Full-Page Hero Section */
 .hero {
     height: 100vh;
+    width: 100vw;  /* Ensure the section takes up full viewport width */
     background: url('assets/covfefe-logo.jpeg') no-repeat center center;
     background-size: cover; /* Ensure the image covers the full screen */
     display: flex;
