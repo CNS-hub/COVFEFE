@@ -28,23 +28,23 @@ body {
 .hero {
     height: 100vh;
     background: url('assets/covfefe-logo.jpeg') no-repeat center center;
-    background-size: contain;
-    background-color: var(--background-color);
+    background-size: cover; /* Ensure the image covers the full screen */
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    z-index: 1;
 }
 
 /* Header Navigation */
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     background: rgba(0, 0, 0, 0.7);
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     z-index: 10;
 }
 
