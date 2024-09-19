@@ -60,16 +60,14 @@ header nav ul li a:hover {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw; /* Ensure it stretches across the entire viewport */
-    height: 100vh; /* Make sure it covers the full height */
-    background-image: url('assets/covfefe-logo.jpeg'); /* Image path */
+    width: 100vw;
+    height: 100vh;
+    background-image: url('assets/covfefe-logo.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     z-index: -1;
 }
-
-
 
 .float-animation {
     animation: float 4s ease-in-out infinite;
@@ -86,7 +84,7 @@ header nav ul li a:hover {
     padding: 100px 50px;
     background-color: #fff;
     text-align: center;
-    margin-top: 100px; /* To avoid being hidden behind the header */
+    margin-top: 100px;
 }
 
 .about h2 {
@@ -118,6 +116,7 @@ header nav ul li a:hover {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    width: 300px;
 }
 
 .card:hover {
@@ -134,38 +133,55 @@ header nav ul li a:hover {
     font-size: 1.2rem;
 }
 
-/* Contact Section */
-#contact {
-    padding: 50px;
+/* Buy Section */
+.buy-section {
+    padding: 100px 50px;
     background-color: #f4f4f4;
     text-align: center;
 }
 
-#contact h2 {
+.buy-section h2 {
     font-family: 'Bangers', cursive;
     color: #ff8c00;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
-#contact p {
-    font-size: 1.2rem;
+.buy-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buy-button {
+    background-color: #ff8c00;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.buy-button:hover {
+    background-color: #e07d00;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    color: #ff8c00;
+    margin-bottom: 20px;
 }
 
 /* Footer */
 footer {
     background-color: #333;
     color: #fff;
+    padding: 20px;
     text-align: center;
-    padding: 10px 0;
 }
-
-footer p {
-    margin: 0;
-}
-
-/* Smooth Scrolling */
-html {
-    scroll-behavior: smooth;
-}
-
