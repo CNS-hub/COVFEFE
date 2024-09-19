@@ -3,61 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="covfefe_styles.css">
     <title>Covfefe Project</title>
+    <link rel="stylesheet" href="assets/covfefe_styles.css">
 </head>
 <body>
 
-    <!-- Header with Navigation Links (No Title Text) -->
+    <!-- Header Section with Links -->
     <header>
         <nav>
-            <a href="#about">ABOUT</a>
-            <a href="#tokenomics">TOKENOMICS</a>
-            <a href="#contact">CONTACT</a>
-            <a href="#telegram">TELEGRAM</a>
-            <a href="#twitter">TWITTER</a>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#tokenomics">Tokenomics</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://t.me/covfefeproject">Telegram</a></li>
+                <li><a href="https://twitter.com/covfefeproject">Twitter</a></li>
+            </ul>
         </nav>
     </header>
 
-    <!-- Hero Section with Full-Page Image -->
-    <section class="hero"></section>
+    <!-- Hero Section with Video Background -->
+    <section class="hero">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="assets/covfefe-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+        <h1 class="float-animation">Covfefe Project</h1>
+    </section>
 
-    <!-- Main Content Section -->
-    <section id="about" class="main-content">
+    <!-- About Section -->
+    <section id="about" class="about">
         <h2>About the Covfefe Project</h2>
-        <p>
-            Inspired by the mysterious tweet by Donald J. Trump, the Covfefe Project 
-            symbolizes modern interpretations of cryptic messages and the art of 
-            communication.
-        </p>
-        <p>
-            Join us as we explore the evolution of meaning, context, and cultural impact 
-            stemming from one iconic moment in internet history.
-        </p>
+        <p>The Covfefe project was inspired by a tweet from May 31, 2017, that sent waves of curiosity through the internet...</p>
     </section>
 
     <!-- Tokenomics Section -->
     <section id="tokenomics">
         <h2>Tokenomics</h2>
-        <p>Details about the Covfefe token will be available soon.</p>
+        <div class="card">
+            <h3>Total Supply</h3>
+            <p>1,000,000 COVFEFE</p>
+        </div>
+        <div class="card">
+            <h3>Circulating Supply</h3>
+            <p>500,000 COVFEFE</p>
+        </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>Email: info@covfefeproject.com</p>
-    </section>
-
-    <!-- Telegram Section -->
-    <section id="telegram">
-        <h2>Join Our Telegram</h2>
-        <p><a href="https://t.me/covfefeproject" target="_blank">Telegram Link</a></p>
-    </section>
-
-    <!-- Twitter Section -->
-    <section id="twitter">
-        <h2>Follow Us on Twitter</h2>
-        <p><a href="https://twitter.com/covfefeproject" target="_blank">Twitter Link</a></p>
+        <p>Get in touch via <a href="mailto:contact@covfefe.com">contact@covfefe.com</a></p>
     </section>
 
     <!-- Footer -->
