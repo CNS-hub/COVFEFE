@@ -83,6 +83,8 @@ p {
     background-size: cover;
     background-position: center;
     z-index: -1;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 h1 {
