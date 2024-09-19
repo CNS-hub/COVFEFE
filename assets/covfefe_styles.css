@@ -44,6 +44,16 @@ header nav ul li a:hover {
     color: #ff8c00;
 }
 
+/* Full-Screen Section */
+.full-screen {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 /* Hero Section Styling */
 .hero {
     position: relative;
@@ -78,19 +88,11 @@ header nav ul li a:hover {
     100% { transform: translateY(0); }
 }
 
-/* Section Spacing */
-section {
-    padding: 100px 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
+/* Section Titles */
 h2 {
-    margin-bottom: 20px;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #ff8c00;
+    margin-bottom: 20px;
 }
 
 p {
