@@ -44,6 +44,21 @@ header nav ul li a:hover {
     color: #ff8c00;
 }
 
+/* Full-Screen Section */
+.full-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.full-section:nth-child(odd) {
+    background-color: #f4f4f4;
+}
+
 /* Hero Section Styling */
 .hero {
     position: relative;
@@ -78,75 +93,30 @@ header nav ul li a:hover {
     100% { transform: translateY(0); }
 }
 
-/* About Section */
-.about {
-    padding: 100px 50px;
-    background-color: #fff;
-    text-align: center;
-    margin-top: 100px; /* To avoid being hidden behind the header */
-}
-
-.about h2 {
-    font-family: 'Bangers', cursive;
-    color: #ff8c00;
-    margin-bottom: 20px;
-    font-size: 2.5rem;
-}
-
-.about p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* Tokenomics Section */
-#tokenomics {
+/* Buy Buttons */
+.buy-buttons {
     display: flex;
-    justify-content: space-around;
-    padding: 50px;
-    background-color: #fff;
-    text-align: center;
+    justify-content: center;
+    gap: 20px;
 }
 
-.card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-}
-
-.card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #ff8c00;
-}
-
-.card p {
+.buy-btn {
+    padding: 15px 30px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
     font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
 }
 
-/* Contact Section */
-#contact {
-    padding: 50px;
-    background-color: #f4f4f4;
-    text-align: center;
+.buy-btn:hover {
+    background-color: #ff8c00;
 }
 
-#contact h2 {
-    font-family: 'Bangers', cursive;
-    color: #ff8c00;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-#contact p {
-    font-size: 1.2rem;
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
 }
 
 /* Footer */
@@ -159,9 +129,4 @@ footer {
 
 footer p {
     margin: 0;
-}
-
-/* Smooth Scrolling */
-html {
-    scroll-behavior: smooth;
 }
