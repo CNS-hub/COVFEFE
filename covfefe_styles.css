@@ -60,8 +60,8 @@ header nav ul li a:hover {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
     background-image: url('https://cns-hub.github.io/COVFEFE/assets/covfefe-logo.jpeg');
     background-size: cover;
     background-position: center;
