@@ -46,12 +46,13 @@ header nav ul li a:hover {
 
 /* Full-Screen Section */
 .full-screen {
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     text-align: center;
+    padding: 20px;
 }
 
 /* Hero Section Styling */
@@ -61,8 +62,6 @@ header nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
-    text-align: center;
     background-color: #000;
 }
 
@@ -78,14 +77,10 @@ header nav ul li a:hover {
     z-index: -1;
 }
 
-.float-animation {
-    animation: float 4s ease-in-out infinite;
-}
-
-@keyframes float {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0); }
+.hero h1 {
+    color: #fff;
+    font-size: 3rem;
+    z-index: 1;
 }
 
 /* Section Titles */
@@ -95,28 +90,20 @@ h2 {
     margin-bottom: 20px;
 }
 
-p {
-    font-size: 1.2rem;
-    text-align: center;
-}
-
 /* Buy Buttons Styling */
 .buy-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .buy-btn {
+    display: inline-block;
     padding: 15px 30px;
     background-color: #ff8c00;
     color: #fff;
     border-radius: 5px;
     text-decoration: none;
     font-size: 1.2rem;
-    font-weight: bold;
+    margin: 10px;
 }
 
 .buy-btn:hover {
