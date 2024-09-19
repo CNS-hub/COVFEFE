@@ -9,6 +9,7 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: #333;
+    background-color: #f4f4f4;
 }
 
 /* Header Styling */
@@ -16,6 +17,10 @@ header {
     background-color: #333;
     padding: 10px 0;
     text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 header nav ul {
@@ -47,25 +52,19 @@ header nav ul li a:hover {
     align-items: center;
     color: #fff;
     text-align: center;
+    background-color: #000; /* Fallback background */
 }
 
-.hero-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    z-index: -1;
-}
-
-.overlay {
+.hero-background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background-image: url('assets/covfefe-logo.jpeg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
 }
 
 .float-animation {
@@ -80,8 +79,8 @@ header nav ul li a:hover {
 
 /* About Section */
 .about {
-    padding: 50px;
-    background-color: #f4f4f4;
+    padding: 100px 50px;
+    background-color: #fff;
     text-align: center;
 }
 
@@ -158,22 +157,6 @@ footer {
 
 footer p {
     margin: 0;
-}
-
-/* Call-to-Action Buttons */
-.cta-button {
-    padding: 15px 30px;
-    background-color: #ff8c00;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #333;
 }
 
 /* Smooth Scrolling */
